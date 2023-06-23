@@ -6,10 +6,11 @@ import com.springboot.init.data.entity.Product;
 import com.springboot.init.data.repository.ProductRepository;
 import com.springboot.init.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
